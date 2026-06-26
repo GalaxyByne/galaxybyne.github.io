@@ -1,0 +1,185 @@
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+@font-face {
+  font-family: 'Airstream';
+  src: url('https://static.wfonts.com/data/2015/12/29/airstream/AirstreamNF.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Retron2000';
+  src: url('https://fonts.cdnfonts.com/s/18145/Retron2000.woff') format('woff2');
+  font-display: swap;
+}
+
+#main {
+    position: static;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-block: 2%;
+    margin-inline: 10%;
+    padding: 2%;
+    border-radius: 50px;
+}
+#header {
+    padding-bottom: 30px;
+    margin-block: 50px;
+    border-radius: 5px;
+}
+#title {
+    color: white;
+    margin: 0px;
+    font-family: 'Airstream';
+    font-size: 12vw;
+    text-align: center;
+    text-shadow: 0.2vw 0.2vw rgb(137, 99, 240), 0.4vw 0.4vw rgb(107, 63, 226), 0.4vw 0.4vw rgb(133, 98, 230);
+    cursor: default;
+    transition: text-shadow 0.4s ease-out;
+}
+#title:hover {
+    text-shadow: 0.2vw 0.2vw rgb(137, 99, 240), 0.4vw 0.4vw rgb(107, 63, 226), 0.7vw 0.7vw rgb(133, 98, 230);
+}
+.divider {
+    height: 20%;
+    width: auto;
+    margin-block-end: 1.5vw;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.356);
+    transition: box-shadow 0.3s ease-out;
+}
+.divider_heading {
+    position: relative;
+    width: auto;
+    margin-inline: auto;
+    padding-bottom: 0.5%;
+    border-bottom: solid 10px rgb(107, 63, 226);
+}
+.content {
+    display: flex;
+    gap: 1.5vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column {
+    flex: 1;
+    height: auto;
+}
+.entry {
+    height: fit-content;
+    width: auto;
+    margin-block-end: 1.5vw;
+    padding: 1vw;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.356);
+    transition: box-shadow 0.3s ease-out;
+}
+.entry:hover {
+    box-shadow: 3px 3px rgb(255, 255, 255), 10px 10px 10px rgb(107, 63, 226);
+}
+.entry_heading {
+    position: relative;
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: solid 5px rgb(107, 63, 226);
+}
+.link {
+    background-color: rgb(24, 24, 24);
+    border-radius: 7px;
+    padding: 0.5vw;
+    margin-top: 10px;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.356);
+}
+h2 {
+    font-family: 'Retron2000';
+    color: white;
+    margin: 0px;
+    font-size: clamp(1.5rem, 3vw, 4rem);;
+    text-shadow: 0.2rem 0.2rem rgb(137, 99, 240);
+    cursor: default;
+    text-align: center;
+}
+h3 {
+    font-family: 'Retron2000';
+    color: white;
+    margin: 0px;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    text-shadow: 0.2rem 0.2rem rgb(137, 99, 240);
+    cursor: default;
+    text-wrap: initial;
+}
+p {
+    font-family: 'Retron2000';
+    color: white;
+    margin-block: 10px;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    cursor: default;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+a h3 {
+    cursor: pointer;
+}
+.unreleased {
+    font-family: 'Retron2000';
+    color: white;
+    float: right;
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.575);
+    cursor: default;
+    text-wrap: initial;
+    background-color: rgb(107, 63, 226);
+    padding-inline: 2%;
+    padding-block: 1%;
+    border-radius: 50px;
+}
+.entry_image {
+    filter: drop-shadow(0.2rem 0.2rem rgb(107, 63, 226)) drop-shadow(0.2rem 0.2rem 10px #000000);
+    margin: 2%;
+}
+.model_image {
+    filter: drop-shadow(0.2rem 0.2rem rgb(107, 63, 226)) drop-shadow(0.2rem 0.2rem 10px #000000);
+    margin: 10%;
+    width: 80%;
+}
+#snow_sled {
+    width: 50%;
+    translate: 5% 0;
+}
+#snow_mug {
+    width: 30%;
+    translate: 15% -10%;
+}
+#economy_atm {
+    width: 40%;
+    translate: 10% 0;
+}
+#economy_terminal {
+    width: 40%;
+    float: right;
+    translate: -10% 35%;
+}
+#chemistry_mask {
+    width: 40%;
+    translate: 10% 0;
+}
+#chemistry_centrifuge {
+    width: 40%;
+    float: right;
+    translate: -10% 0;
+}
+#wizard_tower {
+    width: 95%;
+}
+#frostpeak_slopes {
+    width: 95%;
+}
